@@ -11,7 +11,7 @@ COPY . /app
 RUN go build -o sse-server 
 
 # Expose the port your SSE server uses
-EXPOSE 8000
+EXPOSE 8080
 
 # Define the startup command
 CMD ["./sse-server"] 

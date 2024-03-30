@@ -56,5 +56,5 @@ func main() {
 	r := mux.NewRouter()
 	r.HandleFunc("/events", eventsHandler)
 	fmt.Println("Server listening at 8000")
-	http.ListenAndServe(":8000", r)
+	http.ListenAndServe(":8080", r)
 }
