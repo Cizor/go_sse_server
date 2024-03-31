@@ -55,6 +55,6 @@ func eventsHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	r := mux.NewRouter()
 	r.HandleFunc("/events", eventsHandler)
-	fmt.Println("Server listening at 8000")
+	fmt.Println("Server listening at 8000 TEST")
 	http.ListenAndServe(":8080", r)
 }
