@@ -45,7 +45,7 @@ func eventsHandler(w http.ResponseWriter, r *http.Request) {
 	for {
 		data := generateRandomData()
 		jsonData, _ := json.Marshal(data)
-		fmt.Println("SOO2 ", string(jsonData))
+		fmt.Println("SOO3 ", string(jsonData))
 		fmt.Fprintf(w, "data: %s\n\n", jsonData)
 		flusher.Flush()
 		time.Sleep(2 * time.Second)
