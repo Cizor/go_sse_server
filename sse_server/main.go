@@ -23,7 +23,7 @@ func generateRandomData() RandomData {
 }
 
 func eventsHandler(w http.ResponseWriter, r *http.Request) {
-	// Inside your eventsHandler function:
+	// Inside your eventsHandler function
 	fmt.Println("EVENTS HANDLER")
 	requiredAPIKey := "SSE_API_KEY" // Replace with your preferred method of storing the key
 	clientAPIKey := r.Header.Get("Authorization")  
