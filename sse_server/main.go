@@ -33,7 +33,6 @@ func eventsHandler(w http.ResponseWriter, r *http.Request) {
 	}
 	flusher, ok := w.(http.Flusher)
 	if !ok {
-		fmt.Println("SOO")
 		http.Error(w, "Streaming not supported", http.StatusInternalServerError)
 		return
 	}
